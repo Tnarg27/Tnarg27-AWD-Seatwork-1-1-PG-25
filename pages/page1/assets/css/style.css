@@ -1,0 +1,123 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Align items in a column */
+    min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+}
+
+/* Header styling */
+header {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation section styles */
+nav {
+    background-color: #444;
+    text-align: center;
+    padding: 10px 0; /* Vertical padding inside the navigation bar */
+}
+
+nav a {
+    color: white;
+    margin: 0 15px; /* Horizontal space between links */
+    text-decoration: none; /* Horizontal space between links */
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f4a261;
+}
+
+/* Main container for content */
+.container {
+background-color: white;
+padding: 20px;
+border-radius: 10px; /* Rounded corners for the container */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+width: 75%;
+margin: 40px auto;
+text-align: center;
+}
+
+/* Main title (h1) styling */
+h1 {
+    background-color: #dc5f00;
+    color: white;
+    padding: 20px 10%; /* Padding inside the title, 10% on left and right */
+    display: inline-block; /* Make the title an inline block for better alignment */
+    border-radius: 8px;
+    text-align: center;
+    max-width: 100%; /* Ensure the title doesn't exceed the container width */
+}
+
+/* Subtitle (h2) styling */
+h2 {
+    color: #333;
+}
+
+/* Bar chart container styling */
+.bar-chart {
+    display: flex; /* Use flexbox to align bars in a row */
+    justify-content: space-around; /* Space bars evenly */
+    align-items: flex-end; /* Align bars to the bottom of the container */
+    height: 200px; /* Set a fixed height for the chart */
+    background: #eee; /* Light grey background for the chart */
+    padding: 10px; /* Padding inside the chart container */
+    border-radius: 5px; /* Rounded corners for the chart container */
+}
+
+/* Individual bar styling inside the chart */
+.bar {
+    width: 40px;
+    background: #0652e9;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+/* Unordered list (ul) styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* List item (li) styling */
+ul li {
+    background-color: #f4f4f4;
+    display: inline-block; /* Display the list items inline */
+    margin: 5px; /* Space between list items */
+    padding: 10px; /* Padding inside each list item */
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px; /* Set font size for the text */
+    font-weight: bold;
+}
+
+/* Footer styling */
+footer {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    clear: both; /* Ensure the footer is placed below any floated elements */
+    position: relative; /* Allow relative positioning */
+    flex-shrink: 0; /* Prevent footer from shrinking */
+}
+
+/* Footer link styling */
+footer a {
+    color: #0652e9;
+    text-decoration: none; /* Remove underline from the links */
+}
+
+/* Footer link hover effect */
+footer a:hover {
+    color: #e76f51; /* Change color to orange on hover */
+    text-decoration: underline; /* Underline the link on hover */
+}

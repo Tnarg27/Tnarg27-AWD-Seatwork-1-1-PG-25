@@ -1,0 +1,119 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header section styles */
+header {
+  background-color: #000000;
+  padding: 20px;
+  text-align: center;
+}
+
+header .logo a {
+  text-decoration: none; /* Remove underline from the logo link */
+}
+
+header .logo img {
+  max-width: 100%; 
+}
+
+/* Navigation section styles */
+nav {
+  background-color: #444;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #f4a261; /* Change link color on hover */
+}
+
+/* Main container for leaderboard */
+.container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  width: 75%;
+  margin: 40px auto;
+  flex: 1; /* Allow the container to grow and take remaining space */
+  text-align: center;
+}
+
+/* Leaderboard title */
+h1 {
+  background-color: #dc5f00;
+  color: white;
+  padding: 20px 10%;
+  display: inline-block; /* Keep the title inline-block for better layout control */
+  border-radius: 8px;
+  text-align: center;
+  max-width: 100%;
+}
+
+/* Controls for sorting */
+.controls {
+  margin-bottom: 20px;
+  display: flex; /* Use flexbox to align items */
+  justify-content: flex-start; /* Align items to the left */
+  align-items: center;
+}
+
+.controls label {
+  margin-right: 10px; /* Space between the label and the select dropdown */
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse; /* Collapses borders between table cells */
+}
+
+table th, table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd; /* Light grey border around table cells */
+}
+
+table th {
+  background-color: #f4f4f4;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9; /* Alternate row colors for readability */
+}
+
+/* Footer styling */
+footer {
+  background-color: #444;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  clear: both; /* Ensure footer is placed below other floated elements */
+  position: relative; /* Allow positioning relative to the document */
+  flex-shrink: 0; /* Prevent footer from shrinking */
+}
+
+/* Footer links */
+footer a {
+  color: #0652e9;
+  text-decoration: none; /* Remove underline from links */
+}
+
+footer a:hover {
+  color: #e76f51; /* Change color on hover */
+  text-decoration: underline; /* Underline on hover */
+}

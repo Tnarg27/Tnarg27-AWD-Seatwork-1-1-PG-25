@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+    <link rel="stylesheet" href="assets/css/style.css"> <!-- Link to external CSS file for styling -->
+</head>
+<body>
+    <!-- HEader Section: Logo -->
+    <header>
+        <div class="logo">
+            <a href="index.html"
+              ><img src="assets/img/logo.png" alt="T-NARG LOGO" width="250"
+            /></a>
+          </div>
+    </header>
+
+    <!-- Navigation Section: leaderboard and statistics page -->
+    <nav>
+        <a href="index.html">Leaderboard</a>
+        <a href="pages\page1\index.html">Statistics</a>
+    </nav>
+
+    <!-- Main Content: Leaderboard Section -->
+    <div class="container">
+        <h1>LEADERBOARD</h1>
+        <div class="controls">
+            <label for="sort"><strong>Sort by:</strong></label>
+            <select id="sort">
+                <option value="name">Name</option>
+                <option value="score">Score</option>
+                <option value="level">Level</option>
+            </select>
+        </div>
+
+        <!-- Table displaying the leaderboard data -->
+        <table id="leaderboard">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Score</th>
+                    <th>Level</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Player rows will be inserted here -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- JavaScript: Link to the external JS file for functionality -->
+    <script src="assets/js/script.js"></script>
+
+    <!-- Footer Section: Contains the logo, copyright, and contact information -->
+    <footer>
+        <div class="footer-logo">
+            <a href="/">
+                <img src="assets/img/logo.png" alt="Logo" width="75"/>
+            </a>
+        </div>
+        <p>&copy; 2025 T-NARG. All rights reserved.</p>
+        <p>Contact us at: <a href="mailto:202212022@fit.edu.com">202212022@fit.edu.com</a></p>
+    </footer>
+</body>
+</html>
