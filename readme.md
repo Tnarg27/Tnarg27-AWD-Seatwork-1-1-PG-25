@@ -13,7 +13,7 @@
 </div>
 <!-- TODO: Make a short description -->
 <div align="center">
-  T-NARG is an interactive Player Leaderboard System designed to display and manage player scores, levels, and other related data. Users can view rankings, track player performance, and sort the leaderboard based on various criteria such as score, level, or name. The platform provides a clean and simple user interface for easy navigation and management of player data.
+  T-NARG is an interactive Player Leaderboard System designed to display and manage player scores, levels, and other related data. Users can view rankings, track player performance, and sort the leaderboard based on various criteria such as score, level, or name and with an option to add and delete player. The platform provides a clean and simple user interface for easy navigation and management of player data.
 </div>
 
 <br />
@@ -44,16 +44,17 @@ T-NARG is a leaderboard platform that tracks and displays player data like score
 The purpose of the platform is to offer a competitive environment where players' performances can be compared, sorted, and tracked. It provides an easy-to-use interface to view rankings, identify top performers, and organize competitions.
 
 - **What are key components** <br/>
-Player Management: Stores and displays details of players, including their name, score, and level. <br />
-Leaderboard Interface: Ranks players dynamically, allowing for easy sorting by different criteria. <br />
-Sorting and Filtering: Sorting options for score, level, or player name to customize the leaderboard view.  <br />
-Interactive Features: Updates the leaderboard in real-time when sorting or filtering criteria are changed.  <br />
-Statistics Page: Displays detailed statistics such as top players, average scores, and level distribution.  <br />
+**Player Management**: Stores and displays details of players, including their name, score, and level. <br />
+**Leaderboard Interface**: Ranks players dynamically, allowing for easy sorting by different criteria. <br />
+**Sorting and Filtering**: Sorting options for score, level, or player name to customize the leaderboard view.  <br />
+**Interactive Features**: Updates the leaderboard in real-time when sorting or filtering criteria are changed.  <br />
+**Statistics Page**: Displays detailed statistics such as top players, average scores, and level distribution.  <br />
+**New Feature - Adding and Deleting Player**: Users can now dynamically add new players to the leaderboard or easily remove existing players, making leaderboard updates quick and efficient.  <br />
 
 - **What technology used and how it is used** <br />
-  HTML: Used for structuring the webpage and defining elements like the leaderboard table, header, footer, and navigation controls. <br />
-  CSS: Applied for styling the page, ensuring a clean, visually appealing layout. CSS is used for spacing, color themes, and responsive design to adapt to different screen sizes. <br />
-  JavaScript: The core of the project. JavaScript is used to dynamically render the leaderboard and enable sorting functionality. It allows for real-time updates of player rankings based on user input.
+  **HTML**: Used for structuring the webpage and defining elements like the leaderboard table, header, footer, and navigation controls. <br />
+  **CSS**: Applied for styling the page, ensuring a clean, visually appealing layout. CSS is used for spacing, color themes, and responsive design to adapt to different screen sizes. <br />
+  **JavaScript**: The core of the project. JavaScript is used to dynamically render the leaderboard and enable sorting functionality. It allows for real-time updates of player rankings based on user input.
 
 ### Key Components
 <!-- TODO: List of Key Components -->
@@ -67,3 +68,10 @@ Statistics Page: Displays detailed statistics such as top players, average score
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)
+
+---
+
+### Updates
+- **Added new features**: Users can now add new players and delete players from the leaderboard.
+- **Connected Statistics Page**: The Statistics page is now integrated with the Leaderboard, ensuring real-time updates.
+- **Updated README file**: Documentation now includes details of new features and improvements.

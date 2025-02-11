@@ -20,7 +20,7 @@ header .logo a {
 }
 
 header .logo img {
-  max-width: 100%; 
+  max-width: 100%;
 }
 
 /* Navigation section styles */
@@ -68,12 +68,31 @@ h1 {
 .controls {
   margin-bottom: 20px;
   display: flex; /* Use flexbox to align items */
-  justify-content: flex-start; /* Align items to the left */
+  justify-content: space-between; /* Push elements to opposite sides */
   align-items: center;
+  width: 100%;
 }
 
-.controls label {
-  margin-right: 10px; /* Space between the label and the select dropdown */
+#sort {
+  margin-right: auto; /* Pushes the dropdown to the left */
+}
+
+.controls label, .controls select {
+  margin-right: 10px; /* Add some space between label and dropdown */
+}
+
+#addPlayerBtn {
+  margin-left: auto; /* Push the button to the right */
+  background-color: #007bff; /* Background color of button */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#addPlayerBtn:hover {
+  background-color: #e76f51; /* Hover color of button */
 }
 
 /* Table styling */
@@ -94,6 +113,81 @@ table th {
 
 table tr:nth-child(even) {
   background-color: #f9f9f9; /* Alternate row colors for readability */
+}
+
+/* Styles for the modal (pop-up form) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark background */
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* padding for better spacing */
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  max-height: 80vh; /* Limit height to 80% of the viewport */
+  overflow-y: auto; /* Enable scrolling if content is too long */
+}
+
+.modal-content input {
+  width: 90%;
+  padding: 8px;
+  margin: 8px 0;
+  display: block;
+}
+
+.modal-content button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  width: auto;
+  min-width: 150px;
+}
+
+.modal-content button:hover {
+  background-color: #e76f51;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Delete button */
+#deletePlayerBtn {
+  margin-left: auto;
+  background-color: #e76f51;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#deletePlayerBtn:hover {
+  background-color: #007bff;
 }
 
 /* Footer styling */
