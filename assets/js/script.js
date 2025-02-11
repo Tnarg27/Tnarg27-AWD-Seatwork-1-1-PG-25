@@ -1,17 +1,23 @@
 // Load players from localStorage
-const players = JSON.parse(localStorage.getItem("players")) || [
-    { name: "Bob", score: 300, level: 3 },
-    { name: "Ivan", score: 320, level: 3 },
-    { name: "Alice", score: 450, level: 5 },
-    { name: "Heidi", score: 400, level: 5 },
-    { name: "Eve", score: 200, level: 2 },
-    { name: "Charlie", score: 500, level: 6 },
-    { name: "Dave", score: 600, level: 7 },
-    { name: "Judy", score: 450, level: 5 },
-    { name: "Grace", score: 350, level: 4 },
-    { name: "Frank", score: 550, level: 6 }
+let players = JSON.parse(localStorage.getItem("players"));
 
-];
+// If no players exist in localStorage, save the default players
+if (!players) {
+    players = [
+        { name: "Bob", score: 300, level: 3 },
+        { name: "Ivan", score: 320, level: 3 },
+        { name: "Alice", score: 450, level: 5 },
+        { name: "Heidi", score: 400, level: 5 },
+        { name: "Eve", score: 200, level: 2 },
+        { name: "Charlie", score: 500, level: 6 },
+        { name: "Dave", score: 600, level: 7 },
+        { name: "Judy", score: 450, level: 5 },
+        { name: "Grace", score: 350, level: 4 },
+        { name: "Frank", score: 550, level: 6 }
+    ];
+    localStorage.setItem("players", JSON.stringify(players)); // Save default players
+}
+
 
 // Function to save players array to localStorage
 function saveToLocalStorage() {
